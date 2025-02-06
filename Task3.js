@@ -115,44 +115,44 @@
 // }
 // simpleCalculator();
 //<------------------------------------------------------------------------------->
-// function diaryProgram() {
-//     let entries = []; 
-//     let running = true;
+function diaryProgram() {
+    let entries = []; 
+    let running = true;
 
-//     while (running) {
-//         let action = prompt("What would you like to do?\n1. Add a new diary entry\n2. View all diary entries\n3. Exit");
-//         switch (action) {
-//             case "1":
-//                 let newEntry = prompt("Write your diary entry:");
-//                 if (newEntry) {
-//                     entries.push(newEntry); 
-//                     alert("Your entry has been saved.");
-//                 } else {
-//                     alert("Entry cannot be empty.");
-//                 }
-//                 break;
+    while (running) {
+        let action = prompt("What would you like to do?\n1. Add a new diary entry\n2. View all diary entries\n3. Exit");
+        switch (action) {
+            case "1":
+                let newEntry = prompt("Write your diary entry:");
+                if (newEntry) {
+                    entries.push(newEntry); 
+                    alert("Your entry has been saved.");
+                } else {
+                    alert("Entry cannot be empty.");
+                }
+                break;
             
-//             case "2":
-//                 if (entries.length === 0) {
-//                     alert("You have no diary entries yet.");
-//                 } else {
-//                     let allEntries = "";
-//                     for (let i = 0; i < entries.length; i++) {
-//                         allEntries += `Entry ${i + 1}: ${entries[i]}\n\n`;
-//                     }
-//                     alert(allEntries);
-//                 }
-//                 break;
+            case "2":
+                if (entries.length === 0) {
+                    alert("You have no diary entries yet.");
+                } else {
+                    let allEntries = "";
+                    for (let i = 0; i < entries.length; i++) {
+                        allEntries += `Entry ${i + 1}: ${entries[i]}\n\n`;
+                    }
+                    alert(allEntries);
+                }
+                break;
 
-//             case "3":
-//                 alert("Goodbye! Your diary has been saved.");
-//                 running = false; 
-//                 break;
+            case "3":
+                alert("Goodbye! Your diary has been saved.");
+                running = false; 
+                break;
 
-//             default:
-//                 alert("Invalid choice. Please select 1, 2, or 3.");
-//                 break;
-//         }
-//     }
-// }
-// diaryProgram();
+            default:
+                alert("Invalid choice. Please select 1, 2, or 3.");
+                break;
+        }
+    }
+}
+diaryProgram();
